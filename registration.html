@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #11cba3 0%, #2575fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.registration-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    background: linear-gradient(to right, #00eeff, #0955ee90);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form select option {
+    font-family: Arial, sans-serif;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #00eeff, #0955ee90); /* Gradient background */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.registration-form button:hover {
+    background: linear-gradient(to right, #03d8e8, #03318e90); /* Reverse gradient on hover */
+}
+
+
+</style>
+<body>
+    <div class="flex-container">
+        <div class="container">
+            <form class="registration-form">
+                <h1>Talent Show Registration Form</h1>
+                
+                <label for="username">First Name</label>
+                <input type="text" id="username" required>
+
+                <label for="username">Last Name</label>
+                <input type="text" id="username" required>
+                
+                <label for="email">Email</label>
+                <input type="email" placeholder="a@gmail.com" id="email" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+                
+                <label for="DOB">Date Of Birth</label>
+                <input type="date" id="DOB" required>
+                
+                <label for="phone-number">Phone Number</label>
+                <input type="text" id="phone-number" required>
+
+                <label for="talents">Tell us your Talents</label>
+                <input type="text" id="talents" required>
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
